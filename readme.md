@@ -2,32 +2,12 @@
 
 **AUPET LMS** is developed for educational institutions like schools and colleges built on Laravel 8
 
-**SCREENSHOTS** 
-
-**Dashboard**
-<img src="https://i.ibb.co/D4T0z6T/dashboard.png" alt="dashboard" border="0">
-
-**Login**
-<img src="https://i.ibb.co/Rh1Bfwk/login.png" alt="login" border="0">
-
-**Student Marksheet**
-<img src="https://i.ibb.co/GCgv5ZR/marksheet.png" alt="marksheet" border="0">
-
-**System Settings**
-<img src="https://i.ibb.co/Kmrhw69/system-settings.png" alt="system-settings" border="0">
-
-**Print Marksheet**
-<div style="clear: both"> </div>
-<img src="https://i.ibb.co/5c1GHCj/capture-20210530-115521-crop.png" alt="print-marksheet">
-
-**Print Tabulation Sheet & Marksheet**
-<img src="https://i.ibb.co/QmscPfn/capture-20210530-115802.png" alt="tabulation-sheet" border="0">
-
 <hr />  
 
 There are 4 types of user accounts. They include:
  
-Administrators (Super Admin & Admin)
+- Super Admin
+- Admin
 - Teacher
 - Student
 
@@ -36,22 +16,29 @@ Administrators (Super Admin & Admin)
 Check Laravel 8 Requirements https://laravel.com/docs/8.x
 
 **Installation**
-- Install dependencies (composer install)
-- Set Database Credentials & App Settings in dotenv file (.env)
-- Migrate Database (php artisan migrate)
-- Database seed (php artisan db:seed)
+- Install dependencies ( composer install )
+- Set Database Credentials & App Settings in dotenv file (.env) you can copy ( .env.example ) and rename it as ( .env )
+- DB_HOST = (127.0.0.1) or (localhost) or (172.1xx.2xx) if you are using hosting service ( Ask your hosting provider to help you with that )
+- DB_DATABASE= AS_YOUR_MYSQL_DATABASE_NAME
+- DB_USERNAME=root (xampp)
+- DB_PASSWORD="" (xampp)
+- Migrate Database ( php artisan migrate )
+- Database seed ( php artisan db:seed )
+- Generating Key ( php artisan key:generate )
+- For Images uploading problem ( php artisan storage:link )
 
 **Login Credentials**
 After seeding. Login details as follows:
 
-|________________________________________________________________|
+
 | Account Type      | Username | Email              | | Password |
 | ------------------|----------|--------------------|-|----------|
 |  Super Admin      |superadmin|superadmin@aupet.com| |   aupet  |
 |  Admin            |admin     |admin@aupet.com     | |   aupet  |
 |  Teacher          |teacher   |teacher@aupet.com   | |   aupet  |
 |  Student          |student   |student@aupet.com   | |   aupet  |
-|----------------------------------------------------------------|
+
+
 #### **FUNCTIONS OF ACCOUNTS** 
 
 **-- SUPER ADMIN**
