@@ -16,7 +16,7 @@
                     <div class="card mb-0">
                         <i>
                             <center>
-                            <img src="{{asset('global_assets/images/logo.png')}}" alt="Girl in a jacket">
+                            <img src="{{asset('global_assets/images/logo.png')}}" alt="Logo">
                             </center>
                         </i>
                         <div class="card-body">
@@ -58,7 +58,7 @@
                             </div>
 
                            <div class="form-group">
-                                <a href="#" class="btn btn-light btn-block"><i class="icon-home"></i> Back to Home</a>
+                                <a href="{{route('welcome')}}" class="btn btn-light btn-block"><i class="icon-home"></i> Back to Home</a>
                            </div>
 
 

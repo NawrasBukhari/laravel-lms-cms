@@ -27,6 +27,12 @@ class HomeController extends Controller
         return view('pages.other.privacy_policy', $data);
     }
 
+    public function landing()
+    {
+
+        return view('landing');
+    }
+
     public function terms_of_use()
     {
         $data['app_name'] = config('app.name');
