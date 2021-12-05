@@ -24,12 +24,14 @@ Check Laravel 8 Requirements https://laravel.com/docs/8.x
 After seeding. Login details as follows:
 
 
-| Account Type      | Username | Email              || Password |
-| ------------------|----------|--------------------||----------|
-|  Super Admin      |superadmin|superadmin@aupet.com||   aupet  |
-|  Admin            |admin     |admin@aupet.com     ||   aupet  |
-|  Teacher          |teacher   |teacher@aupet.com   ||   aupet  |
-|  Student          |student   |student@aupet.com   ||   aupet  |
+| Account Type      | Username | Email              | | Password |
+| ------------------|----------|--------------------|-|----------|
+|  Super Admin      |superadmin|superadmin@aupet.com| |   aupet  |
+|  Admin            |admin     |admin@aupet.com     | |   aupet  |
+|  Teacher          |teacher   |teacher@aupet.com   | |   aupet  |
+|  Student          |student   |student@aupet.com   | |   aupet  |
+
+
 #### **FUNCTIONS OF ACCOUNTS** 
 
 **-- SUPER ADMIN**
