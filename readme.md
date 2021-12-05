@@ -6,7 +6,8 @@
 
 There are 4 types of user accounts. They include:
  
-Administrators (Super Admin & Admin)
+- Super Admin
+- Admin
 - Teacher
 - Student
 
