@@ -16,15 +16,15 @@ There are 4 types of user accounts. They include:
 Check Laravel 8 Requirements https://laravel.com/docs/8.x
 
 **Installation**
-1 Install dependencies ( composer install )
-2 Set Database Credentials & App Settings in dotenv file (.env) you can copy ( .env.example ) and rename it as ( .env )
-3 DB_HOST = (127.0.0.1) or (localhost) or (172.1xx.2xx) if you are using hosting service ( Ask your hosting provider to help you with that )
-4 DB_DATABASE= AS_YOUR_MYSQL_DATABASE_NAME
-5 DB_USERNAME=root (xampp)
-6 DB_PASSWORD="" (xampp)
-7 Migrate Database ( php artisan migrate )
-8 Database seed ( php artisan db:seed )
-9 Generating Key ( php artisan key:generate )
+- Install dependencies ( composer install )
+- Set Database Credentials & App Settings in dotenv file (.env) you can copy ( .env.example ) and rename it as ( .env )
+- DB_HOST = (127.0.0.1) or (localhost) or (172.1xx.2xx) if you are using hosting service ( Ask your hosting provider to help you with that )
+- DB_DATABASE= AS_YOUR_MYSQL_DATABASE_NAME
+- DB_USERNAME=root (xampp)
+- DB_PASSWORD="" (xampp)
+- Migrate Database ( php artisan migrate )
+- Database seed ( php artisan db:seed )
+- Generating Key ( php artisan key:generate )
 
 **Login Credentials**
 After seeding. Login details as follows:
