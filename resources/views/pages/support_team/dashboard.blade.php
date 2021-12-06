@@ -58,7 +58,7 @@
 
                        <div class="media-body text-right">
                            <h3 class="mb-0">{{ $users->where('user_type', 'parent')->count() }}</h3>
-                           <span class="text-uppercase font-size-xs">Total Parents</span>
+                           <span class="text-uppercase font-size-xs">Total Guests</span>
                        </div>
                    </div>
                </div>
@@ -74,7 +74,10 @@
         </div>
 
         <div class="card-body">
-            <div class="fullcalendar-basic"></div>
+        {{-- <div class="fullcalendar-basic"></div>--}}
+            <div class="container">
+                <div id='calendar'></div>
+            </div>
         </div>
     </div>
     {{--Events Calendar Ends--}}

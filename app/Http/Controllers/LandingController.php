@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Landing;
+use App\Models\Frontend;
 use Illuminate\Http\Request;
 
 class LandingController extends Controller
@@ -10,11 +10,14 @@ class LandingController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function index()
     {
-        //
+        $landing = Frontend::all();
+        return view('welcome', compact('landing'));
+
+
     }
 
     /**

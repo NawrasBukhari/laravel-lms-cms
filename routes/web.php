@@ -1,8 +1,8 @@
 <?php
-
+//use App\Http\Controllers\FrontendController;
 Auth::routes();
 
-Route::get('/', 'HomeController@landing')->name('welcome');
+Route::get('/', 'LandingController@index')->name('welcome');
 Route::get('/privacy-policy', 'HomeController@privacy_policy')->name('privacy_policy');
 Route::get('/terms-of-use', 'HomeController@terms_of_use')->name('terms_of_use');
 
@@ -13,6 +13,10 @@ Route::group(['middleware' => 'auth'], function () {
     // Route::get('/', 'HomeController@dashboard')->name('home');
     Route::get('/home', 'HomeController@dashboard')->name('home');
     Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
+    Route::get('/calendar', 'FullCalenderController@index')->name('calendar');
+    Route::post('fullcalenderAjax', 'FullCalenderController@ajax')->name('fullcalenderAjax');
+    Route::resource('frontend','FrontendController');
+
 
     Route::group(['prefix' => 'my_account'], function() {
         Route::get('/', 'MyAccountController@edit_profile')->name('my_account');
@@ -146,6 +150,13 @@ Route::group(['middleware' => 'auth'], function () {
         Route::resource('dorms', 'DormController');
         Route::resource('payments', 'PaymentController');
 
+
+
+
+
+
+
+
     });
 
     /************************ AJAX ****************************/
@@ -153,6 +164,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('get_lga/{state_id}', 'AjaxController@get_lga')->name('get_lga');
         Route::get('get_class_sections/{class_id}', 'AjaxController@get_class_sections')->name('get_class_sections');
         Route::get('get_class_subjects/{class_id}', 'AjaxController@get_class_subjects')->name('get_class_subjects');
+
     });
 
 });
@@ -163,6 +175,7 @@ Route::group(['namespace' => 'SuperAdmin','middleware' => 'super_admin', 'prefix
     Route::get('/settings', 'SettingController@index')->name('settings');
     Route::put('/settings', 'SettingController@update')->name('settings.update');
 
+
 });
 
 /************************ PARENT ****************************/
@@ -171,3 +184,5 @@ Route::group(['namespace' => 'MyParent','middleware' => 'my_parent',], function(
     Route::get('/my_children', 'MyController@children')->name('my_children');
 
 });
+
+

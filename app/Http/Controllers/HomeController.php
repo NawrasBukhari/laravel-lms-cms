@@ -30,7 +30,7 @@ class HomeController extends Controller
     public function landing()
     {
 
-        return view('landing');
+        return view('welcome');
     }
 
     public function terms_of_use()

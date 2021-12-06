@@ -1,6 +1,5 @@
-<link rel="icon" href="{{ asset('global_assets/images/favicon.png') }}">
-
 {{--<!-- Global stylesheets -->--}}
+    <link rel="icon" href="{{ asset('global_assets/images/favicon.png') }}">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
     <link href="{{ asset('global_assets/css/icons/icomoon/styles.css') }}" rel="stylesheet" type="text/css">
     <link href=" {{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
@@ -8,6 +7,12 @@
     <link href=" {{ asset('assets/css/layout.min.css') }}" rel="stylesheet" type="text/css">
     <link href=" {{ asset('assets/css/components.min.css') }}" rel="stylesheet" type="text/css">
     <link href=" {{ asset('assets/css/colors.min.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" />
     <!-- /global stylesheets -->
 
 {{--DatePickers--}}

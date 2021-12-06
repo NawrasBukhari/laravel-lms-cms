@@ -63,6 +63,21 @@
                         </ul>
                     </li>
                     @endif
+                {{--Here begins frontend--}}
+                @if(Qs::userIsAdministrative())
+                    <li class="nav-item">
+                        <a href="{{url('frontend')}}" class="nav-link"><i class="icon-laptop"></i> <span> Frontend </span></a>
+                    </li>
+                @endif
+
+                {{--Here ends frontend--}}
+
+                {{--Calendar--}}
+                @if(Qs::userIsAcademic())
+                    <li class="nav-item">
+                        <a href="{{url('calendar')}}" class="nav-link"><i class="icon-calendar"></i> <span> Calendar </span></a>
+                    </li>
+                @endif
 
                 {{--Administrative--}}
                 @if(Qs::userIsAdministrative())

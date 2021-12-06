@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Landing extends Model
 {
+    protected $table = 'frontends';
     use HasFactory;
 }

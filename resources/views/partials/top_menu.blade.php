@@ -1,12 +1,9 @@
 <div class="navbar navbar-expand-md navbar-dark">
     <div class="mt-2 mr-5">
-        <a href="{{ route('dashboard') }}" class="d-inline-block">
-        <h4 class="text-bold text-white">{{ Qs::getSystemName() }}</h4>
-        </a>
     </div>
-   <div class="navbar-brand">
+   <div style="padding: auto;" class="navbar-brand">
         <a href="{{route('login')}}" class="d-inline-block">
-            <img src="{{ asset('global_assets/images/logo.png') }}" alt="">
+            <img style="height: 52px; width: 52px;" src="{{ asset('global_assets/images/logo.png') }}" alt="">
         </a>
     </div>
 
@@ -15,7 +12,7 @@
             <i class="icon-tree5"></i>
         </button>
         <button class="navbar-toggler sidebar-mobile-main-toggle" type="button">
-            <i class="icon-paragraph-justify3"></i>
+            <i class="icon-paragraph-justify3 "></i>
         </button>
     </div>
 
@@ -23,7 +20,12 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a href="#" class="navbar-nav-link sidebar-control sidebar-main-toggle d-none d-md-block">
-                    <i class="icon-paragraph-justify3"></i>
+                    <i class="icon-paragraph-justify3 fa-2x"></i>
+                </a>
+            </li>
+            <li style="margin-left: 350px;" class="nav-item">
+                <a href="{{ route('welcome') }}" class="navbar-nav-link">
+                    <i class="fas fa-globe fa-2x"></i>
                 </a>
             </li>
 
@@ -45,7 +47,7 @@
                     <div class="dropdown-divider"></div>
                     <a href="{{ route('my_account') }}" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
                     <a href="{{ route('logout') }}" onclick="event.preventDefault();
-          document.getElementById('logout-form').submit();" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
+                    document.getElementById('logout-form').submit();" class="dropdown-item"><i class="icon-switch2"></i> Logout</a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
                     </form>
