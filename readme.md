@@ -14,21 +14,24 @@ Administrators (Super Admin & Admin)
 
 Check Laravel 8 Requirements https://laravel.com/docs/8.x
 
-**Installation Github **
-- Install dependencies composer install
-- Set Database Credentials & App Settings in dotenv file (.env)
-- Migrate Database: php artisan migrate
-- Database seed: php artisan db:seed
-- Storage setup: php artisan storage:link
-- Key generating: php artisan key:generate
+## Installartion
+```bash
+composer install
+php artisan migrate
+php artisan db:seed
+php artisan storage:link
+php artisan key:generate
+Set Database Credentials & App Settings in dotenv file (.env)
+```
 
-**Installation ZIP file**
-- Download it from the following link https://www7.zippyshare.com/d/XNGQSf2B/12830/ultimate.zip
-- change .env to your database credentials
-- php artisan migrate
-- php artisan db:seed
-- Done!
-- If you have an error 404, then delete the .htaccess from the root folder
+## Installation ZIP file
+```bash
+php artisan migrate
+php artisan db:seed
+php artisan storage:link
+php artisan key:generate
+Set Database Credentials & App Settings in dotenv file (.env)
+```
 
 **Login Credentials**
 After seeding. Login details as follows:
@@ -78,6 +81,21 @@ After seeding. Login details as follows:
 - View noticeboard and school events in calendar
 - Manage own profile
 
+## FAQ
+
+#### I got 404 error?
+
+Delete the .htaccess in root directory
+
+#### what is dotenv?
+
+file in the root directory in this format .htaccess
+
+## Screenshots
+
+![Landing page](https://i.ibb.co/SBHr7y2/github.png)
+
+![Admin Panel](https://i.ibb.co/JpyQmnB/github3.png)
 
 
 ### **Contributing**
@@ -94,6 +112,10 @@ If you have discovered a security vulnerability within AUPET LMS, please use pul
 - [+] Routes improvements
 - [+] Security vulnerabilities
 - [+] Calendar imrpoved
+
+## Authors
+
+- [@nawras bukhari](https://instagram.com/nawrasbukhari)
 
 ### **Contact [Nawras Bukhari]**
 - Phone : +77007317313
