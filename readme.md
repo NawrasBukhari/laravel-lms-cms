@@ -83,7 +83,7 @@ If you have discovered a security vulnerability within AUPETLMS, please use pull
 - [+] UI improvement
 - [+] Routes improvements
 - [+] Security vulnerabilities
-- [+] Calendar imrpved
+- [+] Calendar imrpoved
 
 ### **Contact [Nawras Bukhari]**
 - Phone : +77007317313
