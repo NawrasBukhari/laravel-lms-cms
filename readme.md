@@ -79,11 +79,11 @@ Your Contributions & suggestions are welcomed.
 If you have discovered a security vulnerability within AUPETLMS, please use pull request. All security vulnerabilities will be promptly addressed.
 
 ### **V2 Changelogs**
-[+] Dynamic view
-[+] UI improvement
-[+] Routes improvements
-[+] Security vulnerabilities
-[+] Calendar imrpved
+- [+] Dynamic view
+- [+] UI improvement
+- [+] Routes improvements
+- [+] Security vulnerabilities
+- [+] Calendar imrpved
 
 ### **Contact [Nawras Bukhari]**
 - Phone : +77007317313
