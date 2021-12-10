@@ -14,7 +14,7 @@ Administrators (Super Admin & Admin)
 
 Check Laravel 8 Requirements https://laravel.com/docs/8.x
 
-## Installartion
+## Installation
 ```bash
 composer install
 php artisan migrate
