@@ -1,11 +1,24 @@
 @extends('layouts.master')
 @section('page_title', 'Manage Events')
 @section('content')
-
-<div class="card">
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+        <link href="{{ asset('assets/css/_materialFullCalendar.css') }}" rel="stylesheet" type="text/css">
+    </head>
+<style>
+    .calendar-des {
+        background-color: #e84393;
+        background-image: linear-gradient(325deg, #980053 20%, #9b5936 60%);
+        color: #46d5c4;
+        position: relative;
+        font-family: "Open Sans", sans-serif;
+    }
+</style>
+    <div class="card">
 <div class="card-header header-elements-inline">
 
-        <div id='calendar'></div>
+        <div class="calendar-des" id='calendar'>
+        </div>
     </div>
 </div>
 
@@ -24,7 +37,7 @@
         var calendar = $('#calendar').fullCalendar({
             editable: true,
             events: SITEURL + "/calendar",
-            displayEventTime: false,
+            displayEventTime: true,
             editable: true,
             eventRender: function (event, element, view) {
                 event.allDay = event.allDay === 'true';
@@ -42,7 +55,10 @@
                             title: title,
                             start: start,
                             end: end,
-                            type: 'add'
+                            type: 'add',
+                            color: '#C2185B'
+
+
                         },
                         type: "POST",
                         success: function (data) {
@@ -54,7 +70,9 @@
                                     title: title,
                                     start: start,
                                     end: end,
-                                    allDay: allDay
+                                    allDay: allDay,
+                                    color: '#C2185B'
+
                                 },true);
 
                             calendar.fullCalendar('unselect');
@@ -73,7 +91,9 @@
                         start: start,
                         end: end,
                         id: event.id,
-                        type: 'update'
+                        type: 'update',
+                        color: '#C2185B'
+
                     },
                     type: "POST",
                     success: function (response) {

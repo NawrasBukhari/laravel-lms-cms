@@ -1,5 +1,5 @@
 <?php
-//use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\FrontendController;
 Auth::routes();
 
 Route::get('/', 'LandingController@index')->name('welcome');
@@ -14,8 +14,8 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@dashboard')->name('home');
     Route::get('/dashboard', 'HomeController@dashboard')->name('dashboard');
     Route::get('/calendar', 'FullCalenderController@index')->name('calendar');
-    Route::post('fullcalenderAjax', 'FullCalenderController@ajax')->name('fullcalenderAjax');
-    Route::resource('frontend','FrontendController');
+    Route::post('/fullcalenderAjax', 'FullCalenderController@ajax')->name('fullcalenderAjax');
+
 
 
     Route::group(['prefix' => 'my_account'], function() {
@@ -176,6 +176,8 @@ Route::group(['namespace' => 'SuperAdmin','middleware' => 'super_admin', 'prefix
     Route::put('/settings', 'SettingController@update')->name('settings.update');
 
 
+
+
 });
 
 /************************ PARENT ****************************/
@@ -183,6 +185,13 @@ Route::group(['namespace' => 'MyParent','middleware' => 'my_parent',], function(
 
     Route::get('/my_children', 'MyController@children')->name('my_children');
 
+});
+/************************* Front End ***********************/
+Route::group(['prefix' => 'frontend', 'middleware' => 'super_admin'], function() {
+    Route::get('/', [FrontendController::class, 'index'])->name('index');
+    Route::get('/edit', [FrontendController::class, 'edit'])->name('edit');
+    Route::put('/update', [FrontendController::class, 'update'])->name('update');
+    Route::post('/store', [FrontendController::class, 'store'])->name('store');
 });
 
 

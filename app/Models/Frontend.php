@@ -5,8 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * @method static create(array $all)
+ */
 class Frontend extends Model
 {
+    use HasFactory;
+    protected $table = 'frontends';
+    public $timestamps = false;
+    public $incrementing = false;
     protected $fillable = [
         'id',
         'hero_title',
@@ -37,5 +44,7 @@ class Frontend extends Model
         'twitter',
         'google',
     ];
-    use HasFactory;
+
+
+
 }

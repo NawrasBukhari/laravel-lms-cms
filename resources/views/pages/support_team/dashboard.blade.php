@@ -76,7 +76,10 @@
         <div class="card-body">
         {{-- <div class="fullcalendar-basic"></div>--}}
             <div class="container">
-                <div id='calendar'></div>
+            <div>
+
+            </div>
+
             </div>
         </div>
     </div>

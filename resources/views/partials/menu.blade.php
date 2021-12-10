@@ -12,6 +12,12 @@
         </a>
     </div>
     <!-- /sidebar mobile toggler -->
+    <style>
+        .sidebar-content{
+            background-color: #000000;
+            background-image: linear-gradient(341deg, #000000 0%, #2c3e50 74%);
+        }
+    </style>
 
     <!-- Sidebar content -->
     <div class="sidebar-content">
@@ -63,8 +69,8 @@
                         </ul>
                     </li>
                     @endif
-                {{--Here begins frontend--}}
-                @if(Qs::userIsAdministrative())
+                {{-- Frontend--}}
+                @if(Qs::userIsTeamSA())
                     <li class="nav-item">
                         <a href="{{url('frontend')}}" class="nav-link"><i class="icon-laptop"></i> <span> Frontend </span></a>
                     </li>

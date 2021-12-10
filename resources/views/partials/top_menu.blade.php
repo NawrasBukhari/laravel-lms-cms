@@ -1,3 +1,9 @@
+<style>
+    .navbar {
+        background-color: #000000;
+        background-image: linear-gradient(341deg, #000000 0%, #2c3e50 74%);
+    }
+</style>
 <div class="navbar navbar-expand-md navbar-dark">
     <div class="mt-2 mr-5">
     </div>
