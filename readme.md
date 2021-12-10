@@ -117,7 +117,7 @@ If you have discovered a security vulnerability within AUPET LMS, please use pul
 
 ## Authors
 
-- [@nawras bukhari](https://instagram.com/nawrasbukhari)
+- [@nawras bukhari](https://www.instagram.com/nawrasbukhari/)
 
 ### **Contact [Nawras Bukhari]**
 - Phone : +77007317313
