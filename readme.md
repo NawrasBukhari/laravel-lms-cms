@@ -23,12 +23,12 @@ Check Laravel 8 Requirements https://laravel.com/docs/8.x
 - Key generating: php artisan key:generate
 
 **Installation ZIP file**
-- Download it from the following link
-- https://www7.zippyshare.com/d/XNGQSf2B/12830/ultimate.zip
+- Download it from the following link https://www7.zippyshare.com/d/XNGQSf2B/12830/ultimate.zip
 - change .env to your database credentials
 - php artisan migrate
 - php artisan db:seed
 - Done!
+- If you have an error 404, then delete the .htaccess from the root folder
 
 **Login Credentials**
 After seeding. Login details as follows:
