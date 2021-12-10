@@ -19,6 +19,7 @@ Check Laravel 8 Requirements https://laravel.com/docs/8.x
 - Set Database Credentials & App Settings in dotenv file (.env)
 - Migrate Database (php artisan migrate)
 - Database seed (php artisan db:seed)
+- Storage setup (php artisan storage:link)
 
 **Login Credentials**
 After seeding. Login details as follows:
