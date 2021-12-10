@@ -76,7 +76,7 @@ Your Contributions & suggestions are welcomed.
 
 ### **Security Vulnerabilities**
 
-If you have discovered a security vulnerability within AUPETLMS, please use pull request. All security vulnerabilities will be promptly addressed.
+If you have discovered a security vulnerability within AUPET LMS, please use pull request. All security vulnerabilities will be promptly addressed.
 
 ### **V2 Changelogs**
 - [+] Dynamic view
