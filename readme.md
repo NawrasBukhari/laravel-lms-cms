@@ -28,11 +28,7 @@ Set Database Credentials & App Settings in dotenv file (.env)
 Firstly download this file
 https://www89.zippyshare.com/d/3TY9MlPW/29948/portal.zip
 ```bash
-php artisan migrate
-php artisan db:seed
-php artisan storage:link
-php artisan key:generate
-Set Database Credentials & App Settings in dotenv file (.env)
+just follow the installation wizzard and that's it!!
 ```
 
 **Login Credentials**
