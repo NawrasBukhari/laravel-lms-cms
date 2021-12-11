@@ -25,9 +25,9 @@ Set Database Credentials & App Settings in dotenv file (.env)
 ```
 
 ## Installation ZIP file
+```bash
 Firstly download this file
 https://www89.zippyshare.com/d/3TY9MlPW/29948/portal.zip
-```bash
 just follow the installation wizzard and that's it!!
 ```
 
