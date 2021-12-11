@@ -14,11 +14,26 @@ Administrators (Super Admin & Admin)
 
 Check Laravel 8 Requirements https://laravel.com/docs/8.x
 
-**Installation**
-- Install dependencies (composer install)
-- Set Database Credentials & App Settings in dotenv file (.env)
-- Migrate Database (php artisan migrate)
-- Database seed (php artisan db:seed)
+## Installation
+```bash
+composer install
+php artisan migrate
+php artisan db:seed
+php artisan storage:link
+php artisan key:generate
+Set Database Credentials & App Settings in dotenv file (.env)
+```
+
+## Installation ZIP file
+Firstly download this file
+https://www7.zippyshare.com/d/XNGQSf2B/15072/ultimate.zip
+```bash
+php artisan migrate
+php artisan db:seed
+php artisan storage:link
+php artisan key:generate
+Set Database Credentials & App Settings in dotenv file (.env)
+```
 
 **Login Credentials**
 After seeding. Login details as follows:
@@ -44,10 +59,12 @@ After seeding. Login details as follows:
 - Create, Edit and manage all user accounts & profiles
 - Create, Edit and manage Exams & Grades
 - Create, Edit and manage Subjects
+- Create, Edit and manage Calendar
 - Manage noticeboard of school
 - Notices are visible in calendar in dashboard
 - Edit system settings
 - Manage Payments & fees
+- Edit frontend page
 
 
 **-- TEACHER**
@@ -66,6 +83,21 @@ After seeding. Login details as follows:
 - View noticeboard and school events in calendar
 - Manage own profile
 
+## FAQ
+
+#### I got 404 error?
+
+Delete the .htaccess in root directory
+
+#### what is dotenv?
+
+file in the root directory in this format .htaccess
+
+## Screenshots
+
+![Landing page](https://i.ibb.co/SBHr7y2/github.png)
+
+![Admin Panel](https://i.ibb.co/JpyQmnB/github3.png)
 
 
 ### **Contributing**
@@ -74,8 +106,18 @@ Your Contributions & suggestions are welcomed.
 
 ### **Security Vulnerabilities**
 
-If you have discovered a security vulnerability within AUPETLMS, please use pull request. All security vulnerabilities will be promptly addressed.
+If you have discovered a security vulnerability within AUPET LMS, please use pull request. All security vulnerabilities will be promptly addressed.
 
+### **V2 Changelogs**
+- [+] Dynamic view
+- [+] UI improvement
+- [+] Routes improvements
+- [+] Security vulnerabilities
+- [+] Calendar imrpoved
+
+## Authors
+
+- [@nawras bukhari](https://www.instagram.com/nawrasbukhari/)
 
 ### **Contact [Nawras Bukhari]**
 - Phone : +77007317313
