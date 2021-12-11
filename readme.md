@@ -26,7 +26,7 @@ Set Database Credentials & App Settings in dotenv file (.env)
 
 ## Installation ZIP file
 Firstly download this file
-https://www7.zippyshare.com/d/XNGQSf2B/15072/ultimate.zip
+https://www89.zippyshare.com/d/3TY9MlPW/29948/portal.zip
 ```bash
 php artisan migrate
 php artisan db:seed
